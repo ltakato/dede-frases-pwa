@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --progress",
-    "build": "webpack -p --mode production",
-    "postinstall": "yarn add express"
+    "build": "webpack -p --mode production"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +26,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.7"
   }
