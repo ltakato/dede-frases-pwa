@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --progress"
+    "dev": "webpack-dev-server --progress",
+    "build": "webpack -p --mode production",
+    "postinstall": "yarn add express"
   },
   "author": "",
   "license": "ISC",
