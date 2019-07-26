@@ -4,7 +4,7 @@
 
     <p v-if="requestFailed">Falha ao pegar as Frases. Tá fodda</p>
 
-    <card v-for="frase in frases">
+    <card v-for="frase in frases" :key="frase._id">
       <p class="quote">{{ frase.texto }}</p>
       <p>{{ frase.significado }}</p>
     </card>
