@@ -12,6 +12,9 @@
 </template>
 
 <style scoped>
+  h1 {
+    margin: 16px;
+  }
   .quote {
     font-weight: 600;
     font-size: 24px;
