@@ -9,7 +9,7 @@
       <p>{{ frase.significado }}</p>
     </card>
 
-    <modal name="quote-form">
+    <modal width="100%" name="quote-form">
       <form>
         <h1>Nova Frase</h1>
 
@@ -67,6 +67,7 @@
     }),
 
     mounted() {
+      this.$modal.show('quote-form');
       let start = (e) => {
         if (e.type === 'click' && e.button !== 0) {
             return;
@@ -75,7 +76,7 @@
         if (this.pressTimer === null) {
           this.pressTimer = setTimeout(() => {
             this.$modal.show('quote-form');
-          }, 3000)
+          }, 1700)
         }
       };
 
@@ -87,6 +88,7 @@
       };
 
       addEventListener("mousedown", start);
+      addEventListener("touchstart", start);
       addEventListener("click", cancel);
       addEventListener("mouseout", cancel);
 
