@@ -17,7 +17,7 @@
         <input v-model="quote.texto">
 
         <label>Significado</label>
-        <input v-model="quote.texto">
+        <input v-model="quote.significado">
 
         <button @click.prevent="createQuote(quote)">Criar</button>
         <p v-if="creating">Perai que to criando ja...</p>
