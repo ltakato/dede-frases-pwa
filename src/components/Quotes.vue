@@ -67,7 +67,6 @@
     }),
 
     mounted() {
-      this.$modal.show('quote-form');
       let start = (e) => {
         if (e.type === 'click' && e.button !== 0) {
             return;
