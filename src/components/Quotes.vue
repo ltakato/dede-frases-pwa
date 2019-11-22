@@ -19,7 +19,7 @@
         <label>Significado</label>
         <input v-model="quote.significado">
 
-        <button @click.prevent="createQuote(quote)">Criar</button>
+        <button :disabled="!quote.significado && !quote.texto" @click.prevent="createQuote(quote)">Criar</button>
         <p v-if="creating">Perai que to criando ja...</p>
         <p v-if="failedToCreate">Deu ruim pra criar a frase... :/</p>
       </form>
