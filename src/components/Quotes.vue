@@ -75,7 +75,7 @@
         if (this.pressTimer === null) {
           this.pressTimer = setTimeout(() => {
             this.$modal.show('quote-form');
-          }, 1700)
+          }, 2300)
         }
       };
 
